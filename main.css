@@ -1,1 +1,76 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 52vh 33vh;
+    grid-gap: 1%;
+    margin: 10px;
+    grid-template-areas:
+    "nav nav nav nav nav nav nav nav"
+    "trainer trainer tImg tImg tImg pokedex pokedex pokedex"
+    "pokeImg pokeImg pokeImg pokeImg stats stats moves moves";
+}
 
+.navbar {
+  grid-area: nav;
+  display: grid;
+  grid-column: 1fr 1fr 1fr 1fr 1fr;
+  grid-row: auto;
+  grid-template-areas:
+  "pokedexH1 pokedexH1 back next . number";
+  background-color: green;
+
+}
+
+.pokedexH1 {
+  grid-area: pokedexH1;
+  text-align: center;
+}
+
+.back {
+  grid-area: back;
+  width: 50%;
+  height: 50%;
+  margin: 10%;
+}
+
+.next {
+  grid-area: next;
+  width: 50%;
+  height: 50%;
+  margin: 10%;
+}
+
+.number {
+  grid-area: number;
+}
+
+.trainerName {
+  grid-area: trainer;
+  background-color: blue;
+}
+
+.trainerImg  {
+  grid-area: tImg;
+  background-color: yellow;
+}
+
+.pokedex {
+  grid-area: pokedex;
+  overflow-y: scroll;
+  background-color: red;
+}
+
+.pokemonImg  {
+  grid-area: pokeImg;
+  background-color: black;
+}
+
+.stats {
+  grid-area: stats;
+  background-color: orange;
+}
+
+.moves {
+  grid-area: moves;
+  background-color: grey;
+}
