@@ -1,3 +1,62 @@
 body {
-  background-color: red;
+    background-color: #101808;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    margin: 4%;
+    padding: 2%;
+    grid-template-areas:
+    "gio head head head head head"
+    "pokedex pokedex pokedex pokedex pokedex pokedex"
+}
+.gio {
+  height: 200px;
+  width: 90%;
+  grid-area: gio;
+}
+
+.head {
+  grid-area: head;
+  text-align: center;
+  font-size: 4em;
+}
+
+#pokedex {
+    grid-area: pokedex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.legends {
+    list-style: none;
+    background-color: #f4f4f4;
+    color: #222;
+    text-align: center;
+    padding:start
+}
+
+
+.legends-title {
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+}
+.legends-subtitle {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.legends-image {
+  height: 180px;
 }
