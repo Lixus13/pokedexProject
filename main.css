@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  background-color: black;
 }
 
 .container {
@@ -11,10 +12,9 @@ body {
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-gap: 1%;
-  background-color: black;
+  grid-gap: 3%;
   grid-template-columns: 25% 50% 25%;
-  grid-template-rows: 32.5% 38.7% 25%;
+  grid-template-rows: 32.5% 38.7% 8.5%;
   padding-inline-start: 0;
   grid-template-areas:
   ". rocketLogo ."
@@ -27,7 +27,7 @@ body {
 }
 .rocketLogo img {
   height: 100%;
-  width: 27%;
+  width: 21%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -38,25 +38,30 @@ body {
 
 .gio1 {
   height: 100%;
-  width: 40%;
+  width: 35%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  animation: fade 3s linear;
+}
+
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+
 }
 
 
 .textBox {
   grid-area: textBox;
-  background-color: white;
-  border: groove 10px red;
+  font-family: 'Saira Stencil One', cursive;
+  background-color: black;
+  color: red;
+  font-size: 1.5em;
+  animation: fade 8s linear;
+  border: groove red 8px;
 }
 
-.textBox p{
-  font-size: 3em;
-  padding-left: 20px;
-  padding-top: 10px;
-  margin: 0;
-}
 
 
 
