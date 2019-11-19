@@ -1,13 +1,96 @@
+@font-face {
+  font-family: 'Saira Stencil One', cursive;
+}
+
 body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vh 52vh 33vh;
-    grid-gap: 1%;
-    margin: 10px;
-    grid-template-areas:
-    "nav nav nav nav nav nav nav nav"
-    "trainer trainer tImg tImg tImg pokedex pokedex pokedex"
-    "pokeImg pokeImg pokeImg pokeImg stats stats moves moves";
+  margin: 0;
+}
+
+.container {
+  font-family: 'Saira Stencil One', cursive;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-gap: 1%;
+  background-color: black;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 32.5% 38.7% 25%;
+  padding-inline-start: 0;
+  grid-template-areas:
+  ". rocketLogo ."
+  ". gio ."
+  ". textBox ."
+}
+
+.rocketLogo {
+  grid-area: rocketLogo;
+}
+.rocketLogo img {
+  height: 100%;
+  width: 27%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gio {
+  grid-area: gio;
+}
+
+.gio1 {
+  height: 100%;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.textBox {
+  grid-area: textBox;
+  background-color: white;
+  border: groove 10px red;
+}
+
+.textBox p{
+  font-size: 3em;
+  padding-left: 20px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body {
+  display: grid;
+  grid-template-columns: ;
+  grid-template-rows: 5vh 52vh 33vh;
+  grid-gap: 1%;
+  margin: 10px;
+  grid-template-areas:
+  "nav nav nav nav nav nav nav nav"
+  "trainer trainer tImg tImg tImg pokedex pokedex pokedex"
+  "pokeImg pokeImg pokeImg pokeImg stats stats moves moves";
 }
 
 .navbar {
@@ -16,32 +99,19 @@ body {
   grid-column: 1fr 1fr 1fr 1fr 1fr;
   grid-row: auto;
   grid-template-areas:
-  "pokedexH1 pokedexH1 back next . number";
+  "pokedexH1 pokedexH1 . . . number";
   background-color: green;
-
 }
 
 .pokedexH1 {
   grid-area: pokedexH1;
   text-align: center;
-}
-
-.back {
-  grid-area: back;
-  width: 50%;
-  height: 50%;
-  margin: 10%;
-}
-
-.next {
-  grid-area: next;
-  width: 50%;
-  height: 50%;
-  margin: 10%;
+  padding-bottom: 4px;
 }
 
 .number {
   grid-area: number;
+  padding-bottom: 4px;
 }
 
 .trainerName {
@@ -74,3 +144,4 @@ body {
   grid-area: moves;
   background-color: grey;
 }
+*/
