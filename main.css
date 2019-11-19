@@ -1,62 +1,76 @@
 body {
-    background-color: #101808;
-    color: white;
-    margin: 0;
-}
-
-.container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-gap: 20px;
-    margin: 4%;
-    padding: 2%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 52vh 33vh;
+    grid-gap: 1%;
+    margin: 10px;
     grid-template-areas:
-    "gio head head head head head"
-    "pokedex pokedex pokedex pokedex pokedex pokedex"
-}
-.gio {
-  height: 200px;
-  width: 90%;
-  grid-area: gio;
+    "nav nav nav nav nav nav nav nav"
+    "trainer trainer tImg tImg tImg pokedex pokedex pokedex"
+    "pokeImg pokeImg pokeImg pokeImg stats stats moves moves";
 }
 
-.head {
-  grid-area: head;
+.navbar {
+  grid-area: nav;
+  display: grid;
+  grid-column: 1fr 1fr 1fr 1fr 1fr;
+  grid-row: auto;
+  grid-template-areas:
+  "pokedexH1 pokedexH1 back next . number";
+  background-color: green;
+
+}
+
+.pokedexH1 {
+  grid-area: pokedexH1;
   text-align: center;
-  font-size: 4em;
 }
 
-#pokedex {
-    grid-area: pokedex;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 20px;
-    padding-inline-start: 0;
+.back {
+  grid-area: back;
+  width: 50%;
+  height: 50%;
+  margin: 10%;
 }
 
-.legends {
-    list-style: none;
-    background-color: #f4f4f4;
-    color: #222;
-    text-align: center;
-    padding:start
+.next {
+  grid-area: next;
+  width: 50%;
+  height: 50%;
+  margin: 10%;
 }
 
-
-.legends-title {
-    text-transform: uppercase;
-    margin-bottom: 0px;
-    font-size: 32px;
-    font-weight: normal;
-}
-.legends-subtitle {
-    margin-top: 5px;
-    color: #666;
-    font-weight: lighter;
-    text-transform: capitalize;
+.number {
+  grid-area: number;
 }
 
-.legends-image {
-  height: 180px;
+.trainerName {
+  grid-area: trainer;
+  background-color: blue;
+}
+
+.trainerImg  {
+  grid-area: tImg;
+  background-color: yellow;
+}
+
+.pokedex {
+  grid-area: pokedex;
+  overflow-y: scroll;
+  background-color: red;
+}
+
+.pokemonImg  {
+  grid-area: pokeImg;
+  background-color: black;
+}
+
+.stats {
+  grid-area: stats;
+  background-color: orange;
+}
+
+.moves {
+  grid-area: moves;
+  background-color: grey;
 }
