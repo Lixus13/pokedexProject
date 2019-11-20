@@ -31,6 +31,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  animation: fade 2s linear;
 }
 .gio {
   grid-area: gio;
@@ -42,7 +43,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  animation: fade 3s linear;
+  animation: fade 10s linear;
 }
 
 @keyframes fade {
@@ -54,99 +55,10 @@ body {
 
 .textBox {
   grid-area: textBox;
+  display: none;
   font-family: 'Saira Stencil One', cursive;
   background-color: black;
   color: red;
   font-size: 1.5em;
-  animation: fade 8s linear;
   border: groove red 8px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-body {
-  display: grid;
-  grid-template-columns: ;
-  grid-template-rows: 5vh 52vh 33vh;
-  grid-gap: 1%;
-  margin: 10px;
-  grid-template-areas:
-  "nav nav nav nav nav nav nav nav"
-  "trainer trainer tImg tImg tImg pokedex pokedex pokedex"
-  "pokeImg pokeImg pokeImg pokeImg stats stats moves moves";
-}
-
-.navbar {
-  grid-area: nav;
-  display: grid;
-  grid-column: 1fr 1fr 1fr 1fr 1fr;
-  grid-row: auto;
-  grid-template-areas:
-  "pokedexH1 pokedexH1 . . . number";
-  background-color: green;
-}
-
-.pokedexH1 {
-  grid-area: pokedexH1;
-  text-align: center;
-  padding-bottom: 4px;
-}
-
-.number {
-  grid-area: number;
-  padding-bottom: 4px;
-}
-
-.trainerName {
-  grid-area: trainer;
-  background-color: blue;
-}
-
-.trainerImg  {
-  grid-area: tImg;
-  background-color: yellow;
-}
-
-.pokedex {
-  grid-area: pokedex;
-  overflow-y: scroll;
-  background-color: red;
-}
-
-.pokemonImg  {
-  grid-area: pokeImg;
-  background-color: black;
-}
-
-.stats {
-  grid-area: stats;
-  background-color: orange;
-}
-
-.moves {
-  grid-area: moves;
-  background-color: grey;
-}
-*/
