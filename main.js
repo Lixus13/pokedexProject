@@ -1,8 +1,8 @@
 let senpaiArray = []
 
 queryPokemonAPI =  async () => {
-  let x = prompt('Enter Number')
-  let req =  await fetch(`https://fizal.me/pokeapi/api/v2/id/${x}.json`)
+  let x = prompt('Enter PokeName or PokeNumber')
+  let req =  await fetch(`https://pokeapi.co/api/v2/pokemon/${x}/`)
   let data =  await req.json()
   let pokemon = {
     name: data.name,
@@ -20,14 +20,14 @@ queryPokemonAPI =  async () => {
 }
 
 createPkmn = (pokemon) => {
-  let generate = document.createElement('div')
+  let generate = document.createElement('ul')
   document.body.appendChild(generate)
-  generate.classname="generator"
+  generate.setAttribute("id", "generator_id");
   generate.innerHTML= `<img src = "${pokemon.link}" width="150px" height="150px">
-                        <p> ${pokemon.name}</p>
-                        <p> Pokemon HP: ${pokemon.stats.hp}
-                        Pokemon DEF: ${pokemon.stats.def}
-                        Pokemon ATK: ${pokemon.stats.atk}
-                        Pokemon Abilities: ${pokemon.abl[0]} </p>
+                        <li> ${pokemon.name}</li>
+                        <li> Pokemon HP: ${pokemon.stats.hp}</li>
+                        <li>Pokemon DEF: ${pokemon.stats.def}</li>
+                        <li>Pokemon ATK: ${pokemon.stats.atk}</li>
+                        <li>Pokemon Abilities: ${pokemon.abl[0]} </li>
                       `
 }

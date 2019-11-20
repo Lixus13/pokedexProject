@@ -6,12 +6,8 @@ body {
   font-family: 'Saira Stencil One', cursive;
   display: block;
   margin: 0;
-}
-
-.navbar {
-  /* grid-area: nav; */
-  background-color: black;
-  color: red;
+  background-image: url(pkmn-bckgrnd.jpg);
+  color: white;
 }
 
 .navbar h1 {
