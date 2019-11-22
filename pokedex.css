@@ -1,20 +1,40 @@
 @font-face {
   font-family: 'Saira Stencil One', cursive;
 }
-
 #container {
+  display: grid;
   font-family: 'Saira Stencil One', cursive;
-  display: block;
   margin: 0;
-  background-image: url(./images/pkmn-bckgrnd.jpg);
-  color: white;
-  :
+  height: 100%;
+  width: 100%;
+  grid-template: 25vh 25vh 25vh 25vh / 25vw 25vw 25vw 25vw;
+  grid-template-areas:
+  "tImg  tImg . digimon"
+  "tImg  tImg . digimon"
+  "moves  moves  stats  stats"
 }
 
-#generator {
-  list-style-type: none;
+#digimon {
+  grid-area: digimon;
+  overflow-y: scroll;
 }
 
 #generator li {
   text-transform: capitalize;
+  list-style-type: none
+}
+
+#trainerImg  {
+  grid-area: tImg;
+  background-color: yellow;
+}
+
+#stats {
+  grid-area: stats;
+  background-color: orange;
+}
+
+#moves {
+  grid-area: moves;
+  background-color: grey;
 }

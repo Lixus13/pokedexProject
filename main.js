@@ -13,7 +13,9 @@ queryPokemonAPI =  async () => {
     pokemon.def = data.stats[3].base_stat
     for(i = 0; i < data.abilities.length; i++) {
       pokemon.abilities.push(data.abilities[i].ability.name)
-
+    }
+    for(ii = 0; ii <= 5; ii++) {
+      trainer.team.push(pokemon)
     }
     console.log(data);
     createPkmn(pokemon)
@@ -22,15 +24,14 @@ queryPokemonAPI =  async () => {
 
 createPkmn = (pokemon) => {
   let generate = document.createElement('ul')
-  let pokeImg = document.getElementById('generator')
-  var space = " "
+  let pokemengs = document.getElementById('digimon')
   generate.setAttribute("id", "generator");
-  generate.innerHTML= `<img src = "${pokemon.sprite}" width="150px" height="150px">
+  generate.innerHTML= `<img src = "${pokemon.sprite}">
                         <li> ${pokemon.name}</li>
                         <li> Pokemon HP: ${pokemon.hp}</li>
                         <li>Pokemon ATK: ${pokemon.atk}</li>
                         <li>Pokemon DEF: ${pokemon.def}</li>
-                        <li>Pokemon Abilities: ${pokemon.abilities}${space}  </li>
+                        <li>Pokemon Abilities: ${pokemon.abilities} </li>
                       `
-                      pokeImg.appendChild(generate)
+                      pokemengs.appendChild(generate)
 }
