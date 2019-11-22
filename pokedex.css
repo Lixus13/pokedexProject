@@ -2,10 +2,19 @@
   font-family: 'Saira Stencil One', cursive;
 }
 
-body {
+#container {
   font-family: 'Saira Stencil One', cursive;
   display: block;
   margin: 0;
   background-image: url(./images/pkmn-bckgrnd.jpg);
   color: white;
+  :
+}
+
+#generator {
+  list-style-type: none;
+}
+
+#generator li {
+  text-transform: capitalize;
 }
