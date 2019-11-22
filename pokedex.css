@@ -1,17 +1,28 @@
 @font-face {
   font-family: 'Saira Stencil One', cursive;
 }
+
+body {
+  background-image: url(./images/pkmn-bckgrnd.jpg);
+}
+
 #container {
   display: grid;
   font-family: 'Saira Stencil One', cursive;
   margin: 0;
-  height: 100%;
-  width: 100%;
-  grid-template: 25vh 25vh 25vh 25vh / 25vw 25vw 25vw 25vw;
+  height: 98.2vh;
+  width: auto;
+  grid-template: 25% 25% 25% 25% / 25% 25% 25% 25%;
   grid-template-areas:
   "tImg  tImg . digimon"
-  "tImg  tImg . digimon"
-  "moves  moves  stats  stats"
+  "tImg  tImg stats digimon"
+  "moves  moves  stats  digimon"
+  "moves  moves  .  digimon"
+}
+
+#btn {
+  cursor: pointer;
+  display: block;
 }
 
 #digimon {
@@ -19,22 +30,58 @@
   overflow-y: scroll;
 }
 
+#digimon li {
+  color: white;
+}
+#digimon img {
+  cursor: pointer;
+}
+
+#generator {
+  grid-area: generator;
+}
+
 #generator li {
   text-transform: capitalize;
-  list-style-type: none
+  list-style-type: none;
 }
 
 #trainerImg  {
   grid-area: tImg;
-  background-color: yellow;
 }
 
 #stats {
+  display: none;
+  text-transform: capitalize;
   grid-area: stats;
-  background-color: orange;
+  color: white;
+  list-style-type: none;
 }
 
 #moves {
   grid-area: moves;
-  background-color: grey;
+
+}
+
+animate {
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button {
+	position: sticky;
+  top: 0;
+	padding: 10px 30px;
+  margin: 0px 14px 14px 0px;
+	border-radius: 10px;
+	font-family: 'Saira Stencil One', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.deets {
+	background-color: #030213;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
 }
