@@ -28,6 +28,7 @@ body {
 #digimon {
   grid-area: digimon;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #digimon li {
@@ -51,11 +52,11 @@ body {
 }
 
 #stats {
-  display: none;
   text-transform: capitalize;
   grid-area: stats;
   color: white;
   list-style-type: none;
+  display: none;
 }
 
 #moves {
@@ -71,7 +72,7 @@ animate {
 .action-button {
 	position: sticky;
   top: 0;
-	padding: 10px 30px;
+	padding: 10px 10px;
   margin: 0px 14px 14px 0px;
 	border-radius: 10px;
 	font-family: 'Saira Stencil One', cursive;
