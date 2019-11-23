@@ -1,19 +1,19 @@
 class Pokemon {
-  constructor(name, abilities) {
+  constructor(name) {
     this.name = name
     this.hp = null
     this.atk = null
     this.def = null
     this.abilities = []
+    this.moveset = []
   }
 }
 
 class Trainer {
-  constructor(name, team) {
+  constructor(name) {
     this.name = name
     this.team = []
   }
 }
 
-
-let trainer = new Trainer()
+  let trainer = new Trainer()

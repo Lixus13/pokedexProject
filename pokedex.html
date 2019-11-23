@@ -2,15 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Luis Pokedex</title>
+    <title>Luis Pokédex</title>
     <link rel="stylesheet" href="pokedex.css">
     <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
   </head>
   <body>
       <div id="container">
-        <div id="trainerImg"></div>
+        <div id="trainerImg">
+          <button type="button" id="btn" onclick="createTrainer()" class="action-button animate shadow deets">Trainer</button>
+        </div>
         <div id="digimon">
-          <button type="button" id="btn" onclick="queryPokemonAPI()" class="action-button shadow animate deets">PokéTeamGenerator</button>
+          <button type="button" id="btn" onclick="queryPokemonAPI()" class="action-button animate shadow deets">PokéTeam</button>
         </div>
         <div id="moves"></div>
         <div id="stats"></div>
