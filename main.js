@@ -1,5 +1,12 @@
+let nombre = prompt('Enter your name Trainer!')
+let characters = document.getElementById('characters')
+let trainerNombre = document.createElement('h1')
 
-trainerArray = new Array('https://archives.bulbagarden.net/media/upload/9/9a/Spr_B2W2_Red.png','https://archives.bulbagarden.net/media/upload/f/f4/Spr_B2W2_Blue.png','https://archives.bulbagarden.net/media/upload/e/ed/Spr_B2W2_Misty.png','https://archives.bulbagarden.net/media/upload/1/1c/Spr_B2W2_Brock.png','https://archives.bulbagarden.net/media/upload/a/ae/Spr_B2W2_Lance.png','https://archives.bulbagarden.net/media/upload/0/0c/Spr_B2W2_Erika.png','https://archives.bulbagarden.net/media/upload/3/30/Spr_B2W2_Flannery.png', 'https://archives.bulbagarden.net/media/upload/1/11/Spr_B2W2_Blaine.png','https://archives.bulbagarden.net/media/upload/1/18/Spr_B2W2_Caitlin.png','https://archives.bulbagarden.net/media/upload/5/57/Spr_B2W2_Clair.png','https://archives.bulbagarden.net/media/upload/5/5b/Spr_HGSS_Burglar.png', 'https://archives.bulbagarden.net/media/upload/6/6f/Spr_B2W2_Janine.png', 'https://archives.bulbagarden.net/media/upload/1/18/Spr_HGSS_Koga.png',"https://archives.bulbagarden.net/media/upload/f/f7/Spr_B2W2_Benga.png", "https://archives.bulbagarden.net/media/upload/8/83/Spr_B2W2_Cynthia.png", "https://archives.bulbagarden.net/media/upload/d/df/Spr_B2W2_Lt_Surge.png", 'https://archives.bulbagarden.net/media/upload/9/97/Spr_B2W2_Twins.png', 'https://archives.bulbagarden.net/media/upload/8/82/Spr_B2W2_Swimmer_F.png', 'https://archives.bulbagarden.net/media/upload/9/96/Spr_B2W2_Shadow_Triad.png', 'https://archives.bulbagarden.net/media/upload/5/57/Spr_B2W2_Marlon.png', 'https://archives.bulbagarden.net/media/upload/c/c2/Spr_B2W2_Fisherman.png', 'https://archives.bulbagarden.net/media/upload/5/5f/Spr_B2W2_Pok%C3%A9mon_Ranger_F.png', 'https://archives.bulbagarden.net/media/upload/f/f8/Spr_B2W2_Rood.png', 'https://archives.bulbagarden.net/media/upload/7/78/Spr_B2W2_Scientist_F.png');
+trainerNombre.innerText = `${nombre}`
+characters.appendChild(trainerNombre)
+
+
+trainerArray = new Array('https://archives.bulbagarden.net/media/upload/9/9a/Spr_B2W2_Red.png','https://archives.bulbagarden.net/media/upload/f/f4/Spr_B2W2_Blue.png','https://archives.bulbagarden.net/media/upload/e/ed/Spr_B2W2_Misty.png','https://archives.bulbagarden.net/media/upload/1/1c/Spr_B2W2_Brock.png','https://archives.bulbagarden.net/media/upload/4/4e/Spr_B2W2_Hilbert_2.png', 'https://archives.bulbagarden.net/media/upload/7/78/Spr_B2W2_Hilda.png','https://archives.bulbagarden.net/media/upload/2/2c/Spr_B2W2_N.png','https://archives.bulbagarden.net/media/upload/9/9c/Spr_B2W2_Gardenia.png','https://archives.bulbagarden.net/media/upload/a/ae/Spr_B2W2_Lance.png','https://archives.bulbagarden.net/media/upload/0/0c/Spr_B2W2_Erika.png','https://archives.bulbagarden.net/media/upload/4/4c/Spr_B2W2_Volkner.png','https://archives.bulbagarden.net/media/upload/3/30/Spr_B2W2_Flannery.png', 'https://archives.bulbagarden.net/media/upload/1/17/Spr_B2W2_Giovanni.png', 'https://archives.bulbagarden.net/media/upload/6/62/Spr_B2W2_Jasmine.png', 'https://archives.bulbagarden.net/media/upload/1/11/Spr_B2W2_Blaine.png','https://archives.bulbagarden.net/media/upload/1/18/Spr_B2W2_Caitlin.png','https://archives.bulbagarden.net/media/upload/b/b1/Spr_B2W2_Dancer.png','https://archives.bulbagarden.net/media/upload/5/57/Spr_B2W2_Clair.png','https://archives.bulbagarden.net/media/upload/5/5b/Spr_HGSS_Burglar.png', 'https://archives.bulbagarden.net/media/upload/6/6f/Spr_B2W2_Janine.png', 'https://archives.bulbagarden.net/media/upload/1/18/Spr_HGSS_Koga.png','https://archives.bulbagarden.net/media/upload/6/6c/Spr_B2W2_Iris.png',"https://archives.bulbagarden.net/media/upload/f/f7/Spr_B2W2_Benga.png", "https://archives.bulbagarden.net/media/upload/8/83/Spr_B2W2_Cynthia.png", "https://archives.bulbagarden.net/media/upload/d/df/Spr_B2W2_Lt_Surge.png", 'https://archives.bulbagarden.net/media/upload/9/97/Spr_B2W2_Twins.png', 'https://archives.bulbagarden.net/media/upload/d/dc/Spr_B2W2_Roughneck.png', 'https://archives.bulbagarden.net/media/upload/8/82/Spr_B2W2_Swimmer_F.png', 'https://archives.bulbagarden.net/media/upload/9/96/Spr_B2W2_Shadow_Triad.png', 'https://archives.bulbagarden.net/media/upload/5/57/Spr_B2W2_Marlon.png', 'https://archives.bulbagarden.net/media/upload/2/26/Spr_B2W2_Sabrina.png','https://archives.bulbagarden.net/media/upload/c/c2/Spr_B2W2_Fisherman.png', 'https://archives.bulbagarden.net/media/upload/5/5f/Spr_B2W2_Pok%C3%A9mon_Ranger_F.png', 'https://archives.bulbagarden.net/media/upload/f/f8/Spr_B2W2_Rood.png', 'https://archives.bulbagarden.net/media/upload/7/78/Spr_B2W2_Scientist_F.png', 'https://archives.bulbagarden.net/media/upload/a/a6/Spr_B2W2_Hoopster.png', );
 i = 0;
 
 function trainerFunction()
@@ -11,7 +18,7 @@ function trainerFunction()
     }
 }
 
-queryPokemonAPI =  async () => {
+queryPokemonAPI =  async (name) => {
   let x = prompt('Enter PokéName')
   let req =  await fetch(`https://pokeapi.co/api/v2/pokemon/${x}/`)
   let data =  await req.json()
@@ -31,8 +38,13 @@ queryPokemonAPI =  async () => {
     for(iii = 0; iii <= 0; iii++) {
       trainer.team.push(pokemon)
     }
+    if (trainer.team.length < 7) {
+      createPkmn(pokemon)
+    }
+    else {
+      alert('Team is full!')
+    }
     console.log(data);
-    createPkmn(pokemon)
 }
 
 createPkmn = (pokemon) => {
@@ -50,11 +62,11 @@ createPkmn = (pokemon) => {
   //     stats.style.display = 'none'
   //   }
     movesets = () => {
-      if (moves.style.display == 'none') {
-        moves.style.display = 'block'
+      if (moves.style.display == 'block') {
+        moves.style.display = 'none'
       }
       else {
-        moves.style.display = 'none'
+        moves.style.display = 'block'
       }
     }
 
@@ -66,14 +78,14 @@ createPkmn = (pokemon) => {
   generate.innerHTML= `<img src = "${pokemon.sprite}">
                         <li> ${pokemon.name}</li>`
 
-  stats.innerHTML =    `<h2><b><u> PokéStats</u></b></h2>
+  stats.innerHTML =    `<button type="button" id="btn" onclick="" class="action-button animate shadow deets">PokéStats</button>
                         <li> ${pokemon.id}. ${pokemon.name}</li>
-                        <li> Pokemon HP: ${pokemon.hp}</li>
-                        <li>Pokemon ATK: ${pokemon.atk}</li>
-                        <li>Pokemon DEF: ${pokemon.def}</li>
-                        <li>Pokemon Abilities: ${pokemon.abilities} </li>`
+                        <li> Pokémon HP: ${pokemon.hp}</li>
+                        <li>Pokémon ATK: ${pokemon.atk}</li>
+                        <li>Pokémon DEF: ${pokemon.def}</li>
+                        <li>Pokémon Abilities: ${pokemon.abilities} </li>`
 
-  moves.innerHTML =     `<h2><b><u>PokéMoves</u></b></h2>
+  moves.innerHTML =     `  <button type="button" id="btn" onclick="" class="action-button animate shadow deets">PokéMoves</button>
                         <li> ${pokemon.moveset} </li>
                         `
 

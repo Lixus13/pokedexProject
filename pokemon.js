@@ -1,4 +1,4 @@
-class Pokemon {
+  class Pokemon {
   constructor(name) {
     this.name = name
     this.hp = null
