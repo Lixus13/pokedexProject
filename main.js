@@ -1,4 +1,14 @@
+trainerArray = new Array('https://archives.bulbagarden.net/media/upload/9/9a/Spr_B2W2_Red.png','https://archives.bulbagarden.net/media/upload/f/f4/Spr_B2W2_Blue.png','https://archives.bulbagarden.net/media/upload/e/ed/Spr_B2W2_Misty.png','https://archives.bulbagarden.net/media/upload/1/1c/Spr_B2W2_Brock.png','https://archives.bulbagarden.net/media/upload/a/ae/Spr_B2W2_Lance.png','https://archives.bulbagarden.net/media/upload/0/0c/Spr_B2W2_Erika.png','https://archives.bulbagarden.net/media/upload/3/30/Spr_B2W2_Flannery.png', 'https://archives.bulbagarden.net/media/upload/1/11/Spr_B2W2_Blaine.png','https://archives.bulbagarden.net/media/upload/1/18/Spr_B2W2_Caitlin.png','https://archives.bulbagarden.net/media/upload/5/57/Spr_B2W2_Clair.png','https://archives.bulbagarden.net/media/upload/5/5b/Spr_HGSS_Burglar.png', 'https://archives.bulbagarden.net/media/upload/6/6f/Spr_B2W2_Janine.png', 'https://archives.bulbagarden.net/media/upload/1/18/Spr_HGSS_Koga.png',"https://archives.bulbagarden.net/media/upload/f/f7/Spr_B2W2_Benga.png", "https://archives.bulbagarden.net/media/upload/8/83/Spr_B2W2_Cynthia.png", "https://archives.bulbagarden.net/media/upload/d/df/Spr_B2W2_Lt_Surge.png", 'https://archives.bulbagarden.net/media/upload/9/97/Spr_B2W2_Twins.png', 'https://archives.bulbagarden.net/media/upload/8/82/Spr_B2W2_Swimmer_F.png', 'https://archives.bulbagarden.net/media/upload/9/96/Spr_B2W2_Shadow_Triad.png', 'https://archives.bulbagarden.net/media/upload/5/57/Spr_B2W2_Marlon.png', 'https://archives.bulbagarden.net/media/upload/c/c2/Spr_B2W2_Fisherman.png', 'https://archives.bulbagarden.net/media/upload/5/5f/Spr_B2W2_Pok%C3%A9mon_Ranger_F.png', 'https://archives.bulbagarden.net/media/upload/f/f8/Spr_B2W2_Rood.png', 'https://archives.bulbagarden.net/media/upload/7/78/Spr_B2W2_Scientist_F.png');
+i = 0;
 
+function trainerFunction()
+    {
+     i++;
+    document.getElementById("trainerSprite").src = trainerArray[i];
+    if( i == trainerArray.length-1) {
+   i = -1;
+    }
+}
 
 queryPokemonAPI =  async () => {
   let x = prompt('Enter PokéName')
@@ -55,14 +65,14 @@ createPkmn = (pokemon) => {
   generate.innerHTML= `<img src = "${pokemon.sprite}">
                         <li> ${pokemon.name}</li>`
 
-  stats.innerHTML =    `<h2><b> PokéStats</b></h2>
+  stats.innerHTML =    `<h2><b><u> PokéStats</u></b></h2>
                         <li> ${pokemon.id}. ${pokemon.name}</li>
                         <li> Pokemon HP: ${pokemon.hp}</li>
                         <li>Pokemon ATK: ${pokemon.atk}</li>
                         <li>Pokemon DEF: ${pokemon.def}</li>
                         <li>Pokemon Abilities: ${pokemon.abilities} </li>`
 
-  moves.innerHTML =     `<h2><b> PokéMoves </b></h2>
+  moves.innerHTML =     `<h2><b><u>PokéMoves</u></b></h2>
                         <li> ${pokemon.moveset} </li>
                         `
 

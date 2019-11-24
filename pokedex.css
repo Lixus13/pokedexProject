@@ -16,10 +16,10 @@ body {
   margin: 10px;
   height: 97.75vh;
   width: auto;
-  grid-template: 25% 35% 15% 25% / 27.4% 25% 25% 22.6%;
+  grid-template: 15% 35% 25% 25% / 27.4% 25% 25% 22.6%;
   grid-template-areas:
   "tImg . . digimon"
-  ". . . digimon"
+  "characters . . digimon"
   ". . . digimon"
   ". . moves stats"
 }
@@ -51,6 +51,19 @@ body {
 #digimon img {
   cursor: pointer;
   display: block;
+}
+
+#characters {
+  grid-area: characters;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#trainerSprite {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 150px;
+  width: 150px;
 }
 
 .generator {
@@ -113,7 +126,6 @@ h2 {
 .action-button {
 	position: sticky;
   top: 0;
-  right: 1;
 	padding: 10px 30px;
   margin-left: auto;
   margin-right: auto;
