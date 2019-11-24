@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Luis Pokédex</title>
+    <link rel="stylesheet" href="pokedex.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div id="container">
+        <div id="trainerImg">
+          <button type="button" id="btn" onclick="trainerFunction()" class="action-button animate shadow deets">Trainer</button>
+        </div>
+        <div id = "characters">
+          <img id="trainerSprite" src='https://archives.bulbagarden.net/media/upload/9/9a/Spr_B2W2_Red.png' alt="trainers">
+        </div>
+        <div id="digimon">
+          <button type="button" id="btn" onclick="queryPokemonAPI()" class="action-button animate shadow deets">PokéTeam</button>
+        </div>
+        <div id="moves"></div>
+        <div id="stats"></div>
+      </div>
+
+    <script src="main.js" charset="utf-8"></script>
+    <script src="pokemon.js" charset="utf-8"></script>
+  </body>
+</html>
