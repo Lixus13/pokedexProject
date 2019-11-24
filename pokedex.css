@@ -73,6 +73,7 @@ body img {
   margin-bottom: auto;
   height: 150px;
   width: 150px;
+  cursor: pointer;
 }
 
 .generator {
@@ -134,7 +135,6 @@ h2 {
   background-color: transparent;
   scroll-behavior: smooth;
 }
-
 
 .animate {
 	transition: all .1s;
