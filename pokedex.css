@@ -8,7 +8,9 @@
 
 body {
   margin: 0;
-  background-color: black;
+  background-image: url('https://ze-robot.com/images/source/2758.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body img {
@@ -17,14 +19,14 @@ body img {
 #container {
   display: grid;
   font-family: 'Saira Stencil One', cursive;
-  margin: 10px;
-  height: 97.75vh;
+  margin: 20px;
+  height: 96.15vh;
   width: auto;
-  grid-template: 15% 20% 35% 35% / 27.4% 25% 25% 22.6%;
+  grid-template: 20% 27% 20% 27% / 27.4% 25% 25% 22.6%;
   grid-template-areas:
   "tImg digimon stats moves"
   "characters digimon stats moves"
-  ". digimon stats moves"
+  ". digimon . ."
   ". . . ."
 }
 
