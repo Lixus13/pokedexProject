@@ -4,6 +4,8 @@
     this.hp = null
     this.atk = null
     this.def = null
+    this.weight = null
+    this.height = null
     this.abilities = []
     this.moveset = []
   }

@@ -8,25 +8,23 @@
 
 body {
   margin: 0;
-  background-image: url('https://ze-robot.com/images/source/2758.jpg');
+  background-image: url('https://www.imgbase.info/images/safe-wallpapers/anime/pokemon/17156_pokemon.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #C12026;
 }
-
-body img {
-}
-
 #container {
   display: grid;
   font-family: 'Saira Stencil One', cursive;
   margin: 20px;
   height: 96.15vh;
+  grid-gap: 15px;
   width: auto;
-  grid-template: 20% 27% 20% 27% / 27.4% 25% 25% 22.6%;
+  grid-template: 20% 24% 15% 40% / 30.4% 20% 22% 24.6%;
   grid-template-areas:
   "tImg digimon stats moves"
   "characters digimon stats moves"
-  ". digimon . ."
+  ". digimon stats moves"
   ". . . ."
 }
 
@@ -34,12 +32,16 @@ body img {
   cursor: pointer;
   display: block;
   margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: 2em;
 }
 
 #digimon {
   grid-area: digimon;
   overflow-y: scroll;
   overflow-x: hidden;
+  border: groove grey 14px;
+  background-color: black;
 }
 
 #digimon::-webkit-scrollbar {
@@ -64,15 +66,17 @@ body img {
   grid-area: characters;
   margin-left: auto;
   margin-right: auto;
-  color: white;
+  color: Black;
   text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
 }
 
 #trainerSprite {
   margin-top: auto;
   margin-bottom: auto;
-  height: 150px;
-  width: 150px;
+  height: 180px;
+  width: 180px;
   cursor: pointer;
 }
 
@@ -94,10 +98,6 @@ body img {
 #trainerImg  {
   grid-area: tImg;
 }
-
-#trainerImg  img {
-}
-
 #stats {
   display: block;
   grid-area: stats;
@@ -105,10 +105,12 @@ body img {
   list-style-type: none;
   text-align: center;
   color: white;
+  border: groove grey 14px;
+  background-color: black;
 }
 
 #stats li {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 h2 {
@@ -123,12 +125,15 @@ h2 {
   list-style-type: none;
   overflow-y: scroll;
   overflow-x: hidden;
+  border: groove grey 14px;
+  background-color: black;
   color: white;
+
 }
 
 
 #moves li {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #moves::-webkit-scrollbar {
