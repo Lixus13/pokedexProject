@@ -1,4 +1,4 @@
-let nombre = prompt('Enter your name Trainer!')
+let nombre = prompt('Welcome! Enter your name Trainer!')
 let characters = document.getElementById('characters')
 let trainerNombre = document.createElement('h1')
 
@@ -20,8 +20,7 @@ queryPokemonAPI =  async (name) => {
   let x = prompt('Enter PokéName')
   let req =  await fetch(`https://pokeapi.co/api/v2/pokemon/${x}/`)
   let data =  await req.json()
-  let pokemon = new Pokemon()
-    pokemon.name = data.name
+  let pokemon = new Pokemon(data.name)
     pokemon.id = data.id
     pokemon.sprite = `https://www.pkparaiso.com/imagenes/xy/sprites/animados/${x}.gif`
     pokemon.hp =  data.stats[5].base_stat
