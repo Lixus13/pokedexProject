@@ -5,7 +5,6 @@ let trainerNombre = document.createElement('h1')
 trainerNombre.innerText = `${nombre}`
 characters.appendChild(trainerNombre)
 
-
 trainerArray = new Array('https://archives.bulbagarden.net/media/upload/9/9a/Spr_B2W2_Red.png','https://archives.bulbagarden.net/media/upload/f/f4/Spr_B2W2_Blue.png','https://archives.bulbagarden.net/media/upload/e/ed/Spr_B2W2_Misty.png','https://archives.bulbagarden.net/media/upload/1/1c/Spr_B2W2_Brock.png','https://archives.bulbagarden.net/media/upload/4/4e/Spr_B2W2_Hilbert_2.png', 'https://archives.bulbagarden.net/media/upload/7/78/Spr_B2W2_Hilda.png','https://archives.bulbagarden.net/media/upload/2/2c/Spr_B2W2_N.png','https://archives.bulbagarden.net/media/upload/9/9c/Spr_B2W2_Gardenia.png','https://archives.bulbagarden.net/media/upload/a/ae/Spr_B2W2_Lance.png','https://archives.bulbagarden.net/media/upload/0/0c/Spr_B2W2_Erika.png','https://archives.bulbagarden.net/media/upload/4/4c/Spr_B2W2_Volkner.png','https://archives.bulbagarden.net/media/upload/3/30/Spr_B2W2_Flannery.png', 'https://archives.bulbagarden.net/media/upload/1/17/Spr_B2W2_Giovanni.png', 'https://archives.bulbagarden.net/media/upload/6/62/Spr_B2W2_Jasmine.png', 'https://archives.bulbagarden.net/media/upload/1/11/Spr_B2W2_Blaine.png','https://archives.bulbagarden.net/media/upload/1/18/Spr_B2W2_Caitlin.png','https://archives.bulbagarden.net/media/upload/b/b1/Spr_B2W2_Dancer.png','https://archives.bulbagarden.net/media/upload/5/57/Spr_B2W2_Clair.png','https://archives.bulbagarden.net/media/upload/5/5b/Spr_HGSS_Burglar.png', 'https://archives.bulbagarden.net/media/upload/6/6f/Spr_B2W2_Janine.png', 'https://archives.bulbagarden.net/media/upload/1/18/Spr_HGSS_Koga.png','https://archives.bulbagarden.net/media/upload/6/6c/Spr_B2W2_Iris.png',"https://archives.bulbagarden.net/media/upload/f/f7/Spr_B2W2_Benga.png", "https://archives.bulbagarden.net/media/upload/8/83/Spr_B2W2_Cynthia.png", "https://archives.bulbagarden.net/media/upload/d/df/Spr_B2W2_Lt_Surge.png", 'https://archives.bulbagarden.net/media/upload/9/97/Spr_B2W2_Twins.png', 'https://archives.bulbagarden.net/media/upload/d/dc/Spr_B2W2_Roughneck.png', 'https://archives.bulbagarden.net/media/upload/8/82/Spr_B2W2_Swimmer_F.png', 'https://archives.bulbagarden.net/media/upload/9/96/Spr_B2W2_Shadow_Triad.png', 'https://archives.bulbagarden.net/media/upload/5/57/Spr_B2W2_Marlon.png', 'https://archives.bulbagarden.net/media/upload/2/26/Spr_B2W2_Sabrina.png','https://archives.bulbagarden.net/media/upload/c/c2/Spr_B2W2_Fisherman.png', 'https://archives.bulbagarden.net/media/upload/5/5f/Spr_B2W2_Pok%C3%A9mon_Ranger_F.png', 'https://archives.bulbagarden.net/media/upload/f/f8/Spr_B2W2_Rood.png', 'https://archives.bulbagarden.net/media/upload/7/78/Spr_B2W2_Scientist_F.png', 'https://archives.bulbagarden.net/media/upload/a/a6/Spr_B2W2_Hoopster.png', );
 i = 0;
 
@@ -33,7 +32,7 @@ queryPokemonAPI =  async (name) => {
     for(i = 0; i < data.abilities.length; i++) {
       pokemon.abilities.push(data.abilities[i].ability.name)
     }
-    for(ii = 0; ii < data.moves.length; ii++) {
+    for(ii = 0; ii < 4; ii++) {
       pokemon.moveset.push(data.moves[ii].move.name)
     }
     for(iii = 0; iii <= 0; iii++) {
@@ -72,11 +71,10 @@ createPkmn = (pokemon) => {
 
   stats.innerHTML =    `<button type="button" id="btn" onclick="" class="action-button animate shadow deets">PokéStats</button>
                         <li> ${pokemon.id}. ${pokemon.name}</li>
-                        <li>Pokémon Height: ${pokemon.height}</li>
-                        <li>Pokémon Weight: ${pokemon.weight}</li>
                         <li>Pokémon HP: ${pokemon.hp}</li>
                         <li>Pokémon ATK: ${pokemon.atk}</li>
                         <li>Pokémon DEF: ${pokemon.def}</li>
+                        <li>Pokémon Weight: ${pokemon.weight} lbs</li>
                         <li>Pokémon Abilities: ${pokemon.abilities} </li>`
 
   moves.innerHTML =     `  <button type="button" id="btn" onclick="" class="action-button animate shadow deets">PokéMoves</button>
