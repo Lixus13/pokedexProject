@@ -16,6 +16,17 @@ class Trainer {
     this.name = name
     this.team = []
   }
+  all = () => {
+    return this.team
+  }
+  get = () => {
+    for (let i = 0; i < this.team.length; i++) {
+      if (name == this.team[i].name) {
+        return this.team[i]
+      }
+    }
+  }
+
 }
 
   let trainer = new Trainer()
