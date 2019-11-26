@@ -15,7 +15,6 @@ function trainerFunction()  {
       i = -1;
     }
 }
-
 queryPokemonAPI =  async (name) => {
   let x = prompt('Enter PokéName')
   let req =  await fetch(`https://pokeapi.co/api/v2/pokemon/${x}/`)
@@ -62,13 +61,12 @@ createPkmn = (pokemon) => {
       }
     }
 
-  generate.setAttribute("class", "generator");
-  generate.setAttribute("onclick", "movesets()");
-
-  generate.innerHTML= `<img src = "${pokemon.sprite}">
+    generate.setAttribute("class", "generator");
+    generate.setAttribute("onclick", "movesets()");
+  generate.innerHTML= `<img src = ${pokemon.sprite}>
                         <li> ${pokemon.name}</li>`
 
-  stats.innerHTML =    `<button type="button" id="btn" onclick="" class="action-button animate shadow deets">PokéStats</button>
+  stats.innerHTML =    `<button type="button" id="btn" class="action-button animate shadow deets">PokéStats</button>
                         <li> ${pokemon.id}. ${pokemon.name}</li>
                         <li>Pokémon HP: ${pokemon.hp}</li>
                         <li>Pokémon ATK: ${pokemon.atk}</li>

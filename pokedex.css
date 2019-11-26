@@ -5,9 +5,7 @@
 body {
   margin: 0;
   background-image: url('https://www.imgbase.info/images/safe-wallpapers/anime/pokemon/17156_pokemon.jpg');
-  background-repeat: no-repeat;
   background-size: cover;
-  background-color: red;
 }
 #container {
   display: grid;
@@ -73,17 +71,13 @@ body {
   margin-bottom: auto;
   height: 180px;
   width: 180px;
-  cursor: pointer;
-}
-
-.generator {
-  grid-area: generator;
 }
 
 .generator li {
   text-transform: capitalize;
   list-style-type: none;
   text-align: center;
+  font-size: 24px;
 }
 
 .generator img {
@@ -105,6 +99,7 @@ body {
   background-color: black;
   overflow-y: scroll;
   overflow-x: hidden;
+  font-size: 20px;
 }
 
 #stats::-webkit-scrollbar {
@@ -127,7 +122,6 @@ h2 {
   border: groove grey 14px;
   background-color: black;
   color: white;
-
 }
 
 
