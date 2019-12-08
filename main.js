@@ -15,6 +15,7 @@ function trainerFunction()  {
       i = -1;
     }
 }
+
 queryPokemonAPI =  async (name) => {
   let x = prompt('Enter PokéName')
   let req =  await fetch(`https://pokeapi.co/api/v2/pokemon/${x}/`)
