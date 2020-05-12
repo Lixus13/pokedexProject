@@ -1,9 +1,9 @@
 let nombre = prompt('Welcome! Enter your name Trainer!')
-let characters = document.getElementById('characters')
+let trainerselect = document.getElementById('trainerselect')
 let trainerNombre = document.createElement('h1')
 
 trainerNombre.innerText = `${nombre}`
-characters.appendChild(trainerNombre)
+trainerselect.appendChild(trainerNombre)
 
 trainerArray = new Array("images/Red.png",
 "images/Blue.png", "images/Misty.png", "images/Brock.png", "images/Erika.png", "images/Giovanni.png", "images/Blaine.png", "images/Flannery.png", "images/Lance.png", "images/N.png", "images/Volkner.png", "images/Gardenia.png", "images/Caitlin.png", "images/Hilbert.png", "images/Hilda.png", "images/Jasmine.png", "images/Surge.png");
@@ -11,11 +11,11 @@ trainerArray = new Array("images/Red.png",
 i = 0;
 
 function trainerFunction()  {
-    i++;
-    document.getElementById("trainerSprite").src = trainerArray[i];
-    if( i == trainerArray.length-1) {
-      i = -1;
-    }
+  ++i;
+  if (i == trainerArray.length) {
+    i = 0;
+  }
+  document.getElementById("trainerSprite").src = trainerArray[i];
 }
 
 queryPokemonAPI =  async (name) => {

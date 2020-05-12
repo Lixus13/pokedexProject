@@ -16,9 +16,9 @@ body {
   width: auto;
   grid-template: 20% 24% 15% 40% / 30.4% 20% 22% 24.6%;
   grid-template-areas:
-  "tImg digimon stats moves"
-  "characters digimon stats moves"
-  ". digimon stats moves"
+  "tImg pokemonfinder stats moves"
+  "trainerselect pokemonfinder stats moves"
+  ". pokemonfinder stats moves"
   ". . . ."
 }
 
@@ -30,34 +30,34 @@ body {
   font-size: 2em;
 }
 
-#digimon {
-  grid-area: digimon;
+#pokemonfinder {
+  grid-area: pokemonfinder;
   overflow-y: scroll;
   overflow-x: hidden;
   border: groove grey 14px;
   background-color: black;
 }
 
-#digimon::-webkit-scrollbar {
+#pokemonfinder::-webkit-scrollbar {
   background-color: transparent;
   scroll-behavior: smooth;
 }
 
-#digimon ul {
+#pokemonfinder ul {
   padding: 0;
 }
 
-#digimon li {
+#pokemonfinder li {
   color: white;
 }
 
-#digimon img {
+#pokemonfinder img {
   cursor: pointer;
   display: block;
 }
 
-#characters {
-  grid-area: characters;
+#trainerselect {
+  grid-area: trainerselect;
   margin-left: auto;
   margin-right: auto;
   color: Black;
