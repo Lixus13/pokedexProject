@@ -1,4 +1,8 @@
+
 let nombre = prompt('Welcome! Enter your name Trainer!')
+while (nombre == null || nombre == "") {
+  nombre = prompt('Welcome! Enter your name Trainer!')
+}
 let trainerselect = document.getElementById('trainerselect')
 let trainerNombre = document.createElement('h1')
 
