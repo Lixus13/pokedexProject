@@ -18,14 +18,18 @@ function trainerFunction()  {
   document.getElementById("trainerSprite").src = trainerArray[i];
 }
 
-queryPokemonAPI =  async (name) => {
-  let x = prompt('Enter PokéName')
-  let pick = x.toLowerCase()
-  let req =  await fetch(`https://pokeapi.co/api/v2/pokemon/${pick}/`)
+queryPokemonAPI =  async () => {
+  let pokemonPromptResult = prompt('Enter a Pokémon name to add to your team...')
+  let pokemonChoice = pokemonPromptResult.toLowerCase()
+  let req =  await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonChoice}/`)
+  if (req.status == 404) {
+    alert(`${pokemonChoice} is not a valid Pokémon!`)
+    return
+  }
   let data =  await req.json()
   let pokemon = new Pokemon(data.name)
     pokemon.id = data.id
-    pokemon.sprite = `https://www.pkparaiso.com/imagenes/xy/sprites/animados/${pick}.gif`
+    pokemon.sprite = `https://www.pkparaiso.com/imagenes/xy/sprites/animados/${pokemonChoice}.gif`
     pokemon.hp =  data.stats[5].base_stat
     pokemon.atk = data.stats[4].base_stat
     pokemon.def = data.stats[3].base_stat
@@ -54,7 +58,7 @@ createPkmn = (pokemon) => {
   let movemaker = document.createElement('ul')
   let stats = document.getElementById('stats')
   let moves = document.getElementById('moves')
-  let pokemengs = document.getElementById('digimon')
+  let pokemonContainer = document.getElementById('pokemonfinder')
 
     movesets = () => {
       if (moves.style.display == 'block') {
@@ -81,5 +85,5 @@ createPkmn = (pokemon) => {
   moves.innerHTML =     `  <button type="button" id="btn" onclick="" class="action-button animate shadow deets">PokéMoves</button>
                         <li> ${pokemon.moveset} </li>
                         `
-                      pokemengs.appendChild(generate)
+                      pokemonContainer.appendChild(generate)
 }
