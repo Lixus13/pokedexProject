@@ -22,7 +22,7 @@ class Trainer {
   get = (name) => {
     for (let i = 0; i < this.team.length; i++) {
       if (name == this.team[i].name) {
-        return this.team[i]
+        return this.team[i] 
       }
     }
   }

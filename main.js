@@ -70,7 +70,6 @@ createPkmn = (pokemon) => {
         moves.style.display = 'block'
       }
     }
-
     generate.setAttribute("class", "generator");
     generate.setAttribute("onclick", "movesets()");
     generate.innerHTML= `<img src = ${pokemon.sprite}>
